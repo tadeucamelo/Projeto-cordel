@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
+
+
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+html , body{
+    min-height: 100vh;
+    background-color: dark;
+}
+
+header{
+    background-color: black;
+    color:white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* Maiúscula com primeira letra maior */
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal{
+    background-color: white; 
+    color: black;
+
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.385);
+
+}
+
+section.imagem > p{
+    background-color:  rgba(0, 0, 0, 0.253);
+    display: inline-block; /* caixa do parágrafo se adapta ao conteúdo interior */
+    padding: 5px;
+    text-shadow: 2px 2px 0px 0px rgb(0, 0, 0);
+
+}
+
+section.normal > p {
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
